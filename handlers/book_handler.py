@@ -5,7 +5,7 @@ import webapp2
 
 from models import book
 
-class UploaderHandler(webapp2.RequestHandler):
+class BookHandler(webapp2.RequestHandler):
     def get(self):
     	logging.info("SecondHandler")
     	books = book.Book.query().fetch()

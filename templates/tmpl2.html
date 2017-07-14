@@ -1,7 +1,10 @@
+<!-- -->
 <!DOCTYPE html>
 <html>
 <head>
 
+	Welcome {{ user_email }}
+	
 	<title>{{ title }}</title>
 
 
@@ -10,9 +13,26 @@
 
 </head>
 <body>
+<!-- Title text leads to title page-->
+	<a href="/">
+		<h1>{{ title }}</h1>	
+	</a>
 
-<a href="localhost:8080/"><h1>{{ title }}</h1></a>
-<a href="localhost:8080/"><button type="button">Title</button></a>
+
+<!-- Button links to Login-->
+	<a href="{{ html_login_url }}">
+		<button type="button">Login</button>	
+	</a>
+
+
+<!-- Button links to Upload page-->
+	<a href="/up">	
+		<button type="button">Upload</button>
+	</a>
+
+	<br>
+
+
 
 </body>
 </html>

@@ -12,7 +12,7 @@ class BookHandler(webapp2.RequestHandler):
     	# do stuff with books...
         html_params = {
             "title": "Upload",
-            "content": ""
+            "content": "Upload your kicks here"
         }
         template = jinja_env.env.get_template('templates/tmpl.html')
         self.response.out.write(template.render(html_params))

@@ -8,7 +8,7 @@ class MainHandler(webapp2.RequestHandler):
         logging.info("MainHandler")
         html_params = {
             "title": "Shoe Crew",
-            "content": "It works"
+            "content": "It works",
         }
-        template = jinja_env.env.get_template('templates/tmpl.html')
+        template = jinja_env.env.get_template('templates/tmpl2.html')
         self.response.out.write(template.render(html_params))

@@ -11,8 +11,8 @@ class BookHandler(webapp2.RequestHandler):
     	books = book.Book.query().fetch()
     	# do stuff with books...
         html_params = {
-            "title": "Second Title",
-            "content": "Upload your kicks here"
+            "title": "Upload",
+            "content": ""
         }
         template = jinja_env.env.get_template('templates/tmpl.html')
         self.response.out.write(template.render(html_params))

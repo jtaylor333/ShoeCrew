@@ -1,4 +1,10 @@
 body {
-	background: lightblue;
+	background-image: url(http://hdblackwallpaper.com/wallpaper/2015/07/cool-red-and-black-wallpapers-9-background-wallpaper.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
 	font-family: sans-serif;
 }

@@ -5,9 +5,11 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+
+	font-family: Impact;
+	color: white;
 }
-	font-family: sans-serif;
-}
+
 
 
 

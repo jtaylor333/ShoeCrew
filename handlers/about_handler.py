@@ -1,3 +1,9 @@
+import logging
+import webapp2
+import jinja_env
+from google.appengine.api import users
+
+
 class AboutHandler(webapp2.RequestHandler):
     def get(self):
     	logging.info("AboutHandler")

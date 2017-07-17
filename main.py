@@ -4,6 +4,9 @@ import webapp2
 from handlers import jinja_env
 from handlers import main_handler
 from handlers import book_handler
+from handlers import about_handler
+from handlers import all_handler
+
 
 from google.appengine.api import users
 #

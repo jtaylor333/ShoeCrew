@@ -4,6 +4,7 @@ import webapp2
 
 from google.appengine.api import users
 
+
 class AboutHandler(webapp2.RequestHandler):
     def get(self):
     	logging.info("AboutHandler")

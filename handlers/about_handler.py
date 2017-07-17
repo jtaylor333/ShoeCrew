@@ -9,7 +9,7 @@ class AboutHandler(webapp2.RequestHandler):
     	logging.info("AboutHandler")
         html_params = {
             "title": "About Page",
-            "content": "Hello, "
+            "content": "Hello, we are the Shoe Crew. Juan Taylor, "
         }
         template = jinja_env.env.get_template('templates/tmpl3.html')
         self.response.out.write(template.render(html_params))

@@ -2,6 +2,7 @@
 import jinja_env
 import logging
 import webapp2
+from models import shoe_upload
 
 from models import book
 from google.appengine.api import users
@@ -23,3 +24,18 @@ class BookHandler(webapp2.RequestHandler):
 
         template = jinja_env.env.get_template('templates/tmpl.html')
         self.response.out.write(template.render(html_params))
+
+        # def post(self):
+            
+        #     r_name = self.request.get("name")
+        #     r_description = self.request.get("description")
+        #     # logging.info(r_name)
+
+        #    new_shoe = shoe_upload.ShoeModel(
+
+        #       shoe_name = r_name,
+        #       shoe_description = r_description,
+        #       self.redirect("/all")
+
+
+        #     )

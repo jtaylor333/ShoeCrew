@@ -1,5 +1,5 @@
 body {
-	background-image: url(http://hdblackwallpaper.com/wallpaper/2015/07/cool-red-and-black-wallpapers-9-background-wallpaper.jpg);
+	background-image: url(https://katiedachiselbyrnes.files.wordpress.com/2016/02/red-curtain.jpg);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
         -moz-background-size: cover;
@@ -9,4 +9,12 @@ body {
 	font-family: Impact;
 	color: white;
 
+}
+
+body {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    margin: 8px;
 }

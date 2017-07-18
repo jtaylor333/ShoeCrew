@@ -12,7 +12,7 @@ class AllHandler(webapp2.RequestHandler):
             "title": "All Shoes",
             "content": "Hello"
         }
-        template = jinja_env.env.get_template('templates/tmpl3.html')
+        template = jinja_env.env.get_template('templates/tmpl4.html')
         self.response.out.write(template.render(html_params))
 
     def post(self):

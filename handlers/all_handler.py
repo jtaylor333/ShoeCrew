@@ -29,5 +29,5 @@ class AllHandler(webapp2.RequestHandler):
 
 
             )
-           new_shoe.put()
-           self.redirect("/all")
+        new_shoe.put()
+        self.redirect("/all")

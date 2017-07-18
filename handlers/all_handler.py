@@ -1,6 +1,7 @@
 import jinja_env
 import logging
 import webapp2
+from models import shoe_upload
 
 from google.appengine.api import users
 

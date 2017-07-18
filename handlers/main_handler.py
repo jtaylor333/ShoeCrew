@@ -8,12 +8,15 @@ from google.appengine.api import users
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         logging.info("MainHandler")
+
+#        shoes = shoe_upload.ShoeU.query().fetch()
+
         logging.info(users.get_current_user())
         logging.info(users.create_login_url('/'))
 
         html_params = {
             "title": "Shoe Crew",
-            "content": "It works",
+#            "content": str(len(shoes)) + " kicks and counting"
             "html_login_url": users.create_login_url('/'),
         }
 

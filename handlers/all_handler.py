@@ -19,7 +19,7 @@ class AllHandler(webapp2.RequestHandler):
             
         r_name = self.request.get("name")
         r_description = self.request.get("description")
-            # logging.info(r_name)
+            # logging.info(r_name)   
 
         new_shoe = shoe_upload.ShoeU(
 

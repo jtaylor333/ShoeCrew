@@ -4,14 +4,10 @@ import webapp2
 
 from google.appengine.api import users
 
-
+	
 
 
 class AboutHandler(webapp2.RequestHandler):
-
-	<link rel="stylesheet" type="text/css" href="resources/style.css">
-	<link rel="stylesheet" type="text/css" href="resources/title.css">
-	
     def get(self):
     	logging.info("AboutHandler")
         html_params = {

@@ -18,6 +18,17 @@ body {
     display: block;
     margin: 8px;
 }
+button[type="button"] {
+
+background: blue
+
+width:200pc;
+height: 50px;
+border: 10px ;
+border-color: white;
+
+
+}
 
 
 

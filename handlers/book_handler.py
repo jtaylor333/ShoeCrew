@@ -13,7 +13,6 @@ class BookHandler(webapp2.RequestHandler):
         book_str = ""
 
 
-
     	# do stuff with books...
         html_params = {
             "title": "Upload",

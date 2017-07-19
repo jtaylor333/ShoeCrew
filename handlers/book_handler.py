@@ -15,7 +15,7 @@ class BookHandler(webapp2.RequestHandler):
         new_shoe = shoe_upload.ShoeU.query().fetch()
        
         posts = ""
-        for post in new_shoes:
+        for post in new_shoe:
             posts += "<div>"
             posts += "<h3>User : " + post.user + "</h3>"
             posts += "<h3>User : " + post.shoe_name + "</h3>"

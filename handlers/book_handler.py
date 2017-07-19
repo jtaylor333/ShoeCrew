@@ -17,8 +17,15 @@ class BookHandler(webapp2.RequestHandler):
         html_params = {
             "title": "Upload",
             "content": "Upload your kicks here",
-            
+            "html_login_url": users.create_login_url('/up'),
         }
+
+
+        user = users.get_current_user()
+
+        if user != None:
+            html_params["user_email"] = user.email()    
+        
 
         template = jinja_env.env.get_template('templates/upload.html')
         self.response.out.write(template.render(html_params))

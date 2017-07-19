@@ -14,11 +14,11 @@ class AllHandler(webapp2.RequestHandler):
        
         posts = ""
         for post in new_shoe:
-            posts += "<div>"
-            posts += "<h3>User: " + str(post.user_email) + "</h3>"
-            posts += "<h3>Shoe: " + str(post.shoe_name) + "</h3>"
+            posts += "<div >"
+            posts += "<p class=i>User: " + str(post.user_email) + "</p>"
+            posts += "<p>Shoe: " + str(post.shoe_name) + "</p>"
             posts += "<p>" + str(post.shoe_description) + "</p>"
-            posts += "<img src =" + str(post.shoe_link) + ">"
+            posts += "<img src =" + str(post.shoe_link) + "height=300 width=300>"
             posts += "</div>"
 
 

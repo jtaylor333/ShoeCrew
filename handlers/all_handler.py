@@ -18,7 +18,7 @@ class AllHandler(webapp2.RequestHandler):
             posts += "<h3>User: " + post.user_email + "</h3>"
             posts += "<h3>Shoe: " + post.shoe_name + "</h3>"
             posts += "<p>" + post.shoe_description + "</p>"
-            posts += "<img src =" + post.shoe_link + "</img>"
+            posts += "<img src =" + post.shoe_link + ">"
             posts += "</div>"
 
         html_params = {

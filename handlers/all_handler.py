@@ -23,8 +23,8 @@ class AllHandler(webapp2.RequestHandler):
 
         html_params = {
             "title": "All Shoes",
-            "content": "Hello"
-            "html_post": posts
+            "content": "Hello",
+            "html_post": posts,
         }
 
 

@@ -29,6 +29,17 @@ border-color: white;
 
 
 }
+button[type="submit"] {
+
+background: blue
+
+width:200pc;
+height: 50px;
+border: 10px ;
+border-color: white;
+
+
+}
 
 
 

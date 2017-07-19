@@ -1,6 +1,6 @@
 body{
 
-background-image: url(http://wallpapercave.com/wp/aVxiJOt.jpg);
+background-image: url(http://www.horadent.com/i/2017/05/red-hd-wallpaper-android.jpg);
 
 
 	font-family: Impact;
@@ -10,4 +10,15 @@ background-image: url(http://wallpapercave.com/wp/aVxiJOt.jpg);
 	border-size: 20px;
 	text-align: center; 
 	font-size: 300%;
+}
+button[type="button"] {
+
+background: blue
+
+width:200pc;
+height: 50px;
+border: 10px ;
+border-color: white;
+
+
 }

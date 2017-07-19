@@ -21,12 +21,20 @@ class AllHandler(webapp2.RequestHandler):
             posts += "<img src =" + str(post.shoe_link) + ">"
             posts += "</div>"
 
+
+
         html_params = {
             "title": "All Shoes",
             "content": "Hello",
             "html_post": posts,
+            "html_login_url": users.create_login_url('/all'),
         }
 
+
+        user = users.get_current_user()
+
+        if user != None:
+            html_params["user_email"] = user.email()
 
         template = jinja_env.env.get_template('templates/tmpl4.html')
         self.response.out.write(template.render(html_params))

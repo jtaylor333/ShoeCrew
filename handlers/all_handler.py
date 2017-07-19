@@ -15,10 +15,10 @@ class AllHandler(webapp2.RequestHandler):
         posts = ""
         for post in new_shoe:
             posts += "<div>"
-            posts += "<h3>User: " + post.user_email + "</h3>"
-            posts += "<h3>Shoe: " + post.shoe_name + "</h3>"
-            posts += "<p>" + post.shoe_description + "</p>"
-            posts += "<img src =" + post.shoe_link + ">"
+            posts += "<h3>User: " + str(post.user_email) + "</h3>"
+            posts += "<h3>Shoe: " + str(post.shoe_name) + "</h3>"
+            posts += "<p>" + str(post.shoe_description) + "</p>"
+            posts += "<img src =" + str(post.shoe_link) + ">"
             posts += "</div>"
 
         html_params = {

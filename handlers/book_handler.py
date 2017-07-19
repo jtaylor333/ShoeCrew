@@ -12,27 +12,17 @@ class BookHandler(webapp2.RequestHandler):
     	books = book.Book.query().fetch()
         book_str = ""
 
-        new_shoe = shoe_upload.ShoeU.query().fetch()
-       
-        posts = ""
-        for post in new_shoes:
-            posts += "<div>"
-            posts += "<h3>User : " + post.user + "</h3>"
-            posts += "<h3>User : " + post.shoe_name + "</h3>"
-            posts += "<p>" + post.shoe_description + "</p>"
-            posts += "<img src =" + post.shoe_link + ">"
-            posts += "</div>"
-
-
 
 
     	# do stuff with books...
         html_params = {
             "title": "Upload",
             "content": "Upload your kicks here",
-            "html_post": posts,
+            
         }
 
+        template = jinja_env.env.get_template('templates/upload.html')
+        self.response.out.write(template.render(html_params))
 
 
     def post(self):
@@ -44,14 +34,17 @@ class BookHandler(webapp2.RequestHandler):
 
 
 
-            logging.info("contents was "+r_contents)
 
-            new_post = Comment(user=user.email(), contents=shoe_name, )
-            new_comment.put()
+            new_post = shoe_upload.ShoeU(user_email=user.email(),
+                                        shoe_name=r_name, 
+                                        shoe_description=r_desc,
+                                        shoe_link=r_piclink,
+                                        )
+            new_post.put()
+
+        self.redirect("/all")
 
 
-        template = jinja_env.env.get_template('templates/tmpl.html')
-        self.response.out.write(template.render(html_params))
 
     # def post(self):
             
@@ -69,4 +62,4 @@ class BookHandler(webapp2.RequestHandler):
 
     #         )
     #        new_shoe.put()
-    #        self.redirect("/all")
+          

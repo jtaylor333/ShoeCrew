@@ -15,8 +15,8 @@ class AllHandler(webapp2.RequestHandler):
         posts = ""
         for post in new_shoe:
             posts += "<div id=r>"
-            posts += "<p class=i>User: " + str(post.user_email) + "</p>"
-            posts += "<p>Shoe: " + str(post.shoe_name) + "</p>"
+            posts += "<p class=i>Email: " + str(post.user_email) + "</p>"
+            posts += "<p>Name: " + str(post.shoe_name) + "</p>"
             posts += "<p>" + str(post.shoe_description) + "</p>"
             posts += "<img src =" + str(post.shoe_link) + " height=300 width=300>"
             posts += "</div>"

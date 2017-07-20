@@ -18,7 +18,7 @@ class AllHandler(webapp2.RequestHandler):
             posts += "<p class=i>User: " + str(post.user_email) + "</p>"
             posts += "<p>Shoe: " + str(post.shoe_name) + "</p>"
             posts += "<p>" + str(post.shoe_description) + "</p>"
-            posts += "<img src =" + str(post.shoe_link) + "height=300 width=300>"
+            posts += "<img src =" + str(post.shoe_link) + " height=300 width=300>"
             posts += "</div>"
 
 
